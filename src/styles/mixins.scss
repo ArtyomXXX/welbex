@@ -1,0 +1,26 @@
+@use './variables.scss' as *;
+
+// Текст градиент
+@mixin title-gradient-1 {
+    font-family: $inter;
+    background-color: $gradientColor_1;
+    background-image: $text-linearGradient_1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@mixin text-gradient-2 {
+    @include title-gradient-1;
+    background-image: $text_linearGradient_2;
+}
+
+@mixin text-gradient-3 {
+    @include title-gradient-1;
+    background-image: $text_linearGradient_3;
+}
+
+@mixin lineBeforeText-gradient-4 {
+    @include title-gradient-1;
+    background-image: $text_linearGradient_4;
+}

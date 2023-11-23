@@ -1,0 +1,83 @@
+@use '../../../styles/variables.scss' as *;
+
+.header {
+    padding-top: 57px;
+    @media screen and (max-width: 740px) {
+        padding: 20px;
+        background-color: #000000;
+    }
+}
+
+.header__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    @media screen and (max-width: 990px) {
+        justify-content: center;
+    }
+}
+
+.header__contact {
+    display: flex;
+    & > a {
+        font-weight: 500;
+        margin-right: 47px;
+    }
+    & > .header__social-icons {
+        display: flex;
+        & > a {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
+}
+
+// Навигация
+.nav {
+    display: flex;
+    align-items: start;
+}
+
+.logo {
+    max-width: 115px;
+    font-size: 10px;
+    font-weight: 300;
+    & > a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
+}
+
+.nav__link {
+    display: inline;
+    font-weight: 500;
+    font-size: clamp(5px, 4vw, 16px);
+    margin-left: 30px;
+    border-bottom: 1px solid transparent;
+    transition: .2s ease-in-out;
+    &:hover {
+        border-color: white;
+    }
+
+    &:nth-child(2) {
+        margin-left: 52px;
+        @media screen and (max-width: 990px) {
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 740px) {
+        margin-left: 20px;
+        &:last-child {
+            display: none;
+        }
+    }
+}

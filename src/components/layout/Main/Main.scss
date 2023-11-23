@@ -1,0 +1,177 @@
+@use '../../../styles/variables.scss' as *;
+@use '../../../styles/mixins.scss' as *;
+
+.main {
+    height: 100%;
+    width: 100%;
+    padding: 50px 0 69px;
+    @media screen and (max-width: 740px) {
+        padding-bottom: 96px;
+    }
+    @media screen and (max-width: 500px) {
+        background: url('../../../assets/images/Mobile-home_bg.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+
+.main__inner {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 740px) {
+        height: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+}
+
+.main__header {
+    max-width: 360px;
+    line-height: 1.2;
+    & > h1 {
+        font-size: clamp(10px, 10vw, 48px);
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        & > span {
+            @include title-gradient-1;
+            font-weight: 900;
+        }
+    }
+    & > p {
+        font-family: $montserrat;
+        font-size: clamp(5px, 5vw, 18px);
+        font-weight: 100;
+        letter-spacing: 1.5px;
+        max-width: 300px;
+        margin-bottom: 45px;
+    }
+    @media screen and (max-width: 740px) {
+        max-width: 360px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+.consultation {
+    max-width: 350px;
+    text-align: right;
+    & > h3 {
+        font-size: clamp(10px, 5vw, 18px);
+        font-weight: 500;
+
+        & > span {
+            @include text-gradient-2;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:last-child {
+                @include text-gradient-3;
+            }
+        }
+    }
+    @media screen and (max-width: 740px) {
+        max-width: 360px;
+        text-align: left;
+
+        & > h3 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.consultation__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 30px 46px;
+    margin: 40px 0 61px;
+
+    @media screen and (max-width: 740px) {
+        margin: 0;
+        justify-content: left;
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 315px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.consultation__item {
+    max-width: 130px;
+
+    & > h3 {
+        display: contents;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        &::after {
+            content: 'Виджеты';
+        }
+    }
+    &:nth-child(2) > h3::after {
+        content: 'Dashboard';
+    }
+    &:nth-child(3) > h3::after {
+        content: 'Skype Аудит';
+    }
+    &:nth-child(4) > h3::after {
+        content: '35 дней';
+    }
+    & > p {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    @media screen and (max-width: 740px) {
+        max-width: none;
+        & > h3 {
+            font-size: clamp(5px, 5vw, 13px);
+            font-weight: 100;
+            letter-spacing: 1.5px;
+            margin: 0;
+            &::before {
+                content: '\2014';
+                font-size: clamp(5px, 5vw, 16px);
+                font-weight: 400;
+                margin-right: 5px;
+                @include lineBeforeText-gradient-4;
+            }
+            &::after {
+                content: 'Skype аудит';
+            }
+        }
+        &:nth-child(2) > h3::after {
+            content: '30 виджетов';
+        }
+        &:nth-child(3) > h3::after {
+            content: 'Dashboard';
+        }
+        &:nth-child(4) > h3::after {
+            content: 'Месяц аmoCRM';
+        }
+        & > p {
+            display: none;
+        }
+    }
+}
+
+.consultation__button {
+    width: 262px;
+    height: 61px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white-text;
+    background-color: $buttonColor;
+    transition: .2s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $buttonColorHover;
+    }
+    @media screen and (max-width: 740px) {
+        display: none;
+    }
+}

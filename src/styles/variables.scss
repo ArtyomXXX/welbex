@@ -1,0 +1,22 @@
+// Цвета
+$white-text: #E4E5EA;
+$gray-text: #656566;
+
+$buttonColor: #4077F3;
+$buttonColorHover: #003bc4;
+
+$gradientColor_1: #FCB045;
+$gradientColor_2: #FF3F78;
+$gradientColor_3: #FD1D1D;
+$gradientColor_4: #FC893A;
+
+$text_linearGradient_1: linear-gradient(90deg, $gradientColor_1 30%, $gradientColor_2 120%);
+$text_linearGradient_2: linear-gradient(90deg, $gradientColor_4 0%, $gradientColor_3 100%);
+$text_linearGradient_3: linear-gradient(90deg, $gradientColor_1 60%, $gradientColor_3 140%);
+$text_linearGradient_4: linear-gradient(90deg, $gradientColor_1 40%, $gradientColor_3 80%);
+
+$bgColor: #201621;
+
+// Шрифты
+$inter: Inter, sans-serif;
+$montserrat: Montserrat, sans-serif;

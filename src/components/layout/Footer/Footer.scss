@@ -1,0 +1,119 @@
+@use '../../../styles/variables.scss' as *;
+
+.footer {
+    padding: 55px 0 20px;
+    @media screen and (max-width: 740px) {
+        padding-top: 45px;
+        background-color: #000000;
+    }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+// Первый столбец
+.footer__col {
+    display: flex;
+    flex-direction: column;
+
+    & > h4 {
+        color: $gray-text;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    & > a {
+        margin-bottom: 10px;
+    }
+
+    // Второй столбец
+    &:nth-child(2) {
+        display: block;
+
+        // Содержимое второго столбца
+        & > .footer__col-content {
+            display: flex;
+
+            // Элементы второго столбца
+            & > div {
+                display: flex;
+                flex-direction: column;
+                margin-right: 52px;
+
+                & > a {
+                    margin-bottom: 10px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            @media screen and (max-width: 310px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    // Третий столбец
+    &:nth-child(3) {
+        text-align: right;
+
+        & > a {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        & > p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 70px;
+        }
+        & > .footer__social-icons {
+            display: flex;
+            justify-content: right;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 950px) {
+            text-align: left;
+            & > a {
+                margin-bottom: 8px;
+            }
+            & > p {
+                margin-bottom: 50px;
+            }
+            & > .footer__social-icons {
+                justify-content: left;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        margin-bottom: 30px;
+        & > a {margin-bottom: 10px;}
+    }
+}
+
+// Политика конфиденциальности
+.copyright {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    &>p {
+        margin-bottom: 5px;
+    }
+    &>a {
+        font-size: 12px;
+        border-bottom: 1px solid $white-text;
+    }
+}
