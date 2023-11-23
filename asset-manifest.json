@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/welbex/static/css/main.d293fba8.css",
+    "main.js": "/welbex/static/js/main.b7ae6231.js",
+    "static/js/787.08f9b020.chunk.js": "/welbex/static/js/787.08f9b020.chunk.js",
+    "static/media/home_bg.jpeg": "/welbex/static/media/home_bg.57bb9f7b108f7015b70b.jpeg",
+    "static/media/Mobile-home_bg.jpg": "/welbex/static/media/Mobile-home_bg.b78ed9b49bee3ca7b5b2.jpg",
+    "static/media/logo_welbex.svg": "/welbex/static/media/logo_welbex.878bde610e2a5006aa97d14513671e3a.svg",
+    "static/media/whatsapp.svg": "/welbex/static/media/whatsapp.ebe720f0c912eda28e2bf0613c18300f.svg",
+    "static/media/viber.svg": "/welbex/static/media/viber.efdbe6bd3950a854df10750809a40828.svg",
+    "index.html": "/welbex/index.html",
+    "static/media/telegram.svg": "/welbex/static/media/telegram.fb88fa00e694c94c032a3776e37ad350.svg",
+    "main.d293fba8.css.map": "/welbex/static/css/main.d293fba8.css.map",
+    "main.b7ae6231.js.map": "/welbex/static/js/main.b7ae6231.js.map",
+    "787.08f9b020.chunk.js.map": "/welbex/static/js/787.08f9b020.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d293fba8.css",
+    "static/js/main.b7ae6231.js"
+  ]
+}
